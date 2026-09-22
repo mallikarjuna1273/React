@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <!-- this is the way to create h1 element in html -->
+        <!-- <h1>Hello world !</h1>  -->
+    </div>
+    <script>
+        
+        // this is the way to render h1 element from javascript
+
+//    const heading = document.createElement("h1");
+//    heading.innerHTML= "hello i'm from javascript";
+//    const root = document.getElementById('root');
+//    root.append(heading);
+    </script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<!-- this is the way to create ht element from react using cdn -->
+ <script>
+    const heading = React.createElement("h1", {}, "hello i'm from React"); 
+    const root = ReactDOM.createRoot(document.getElementById('root'))
+    root.render(heading) 
+ </script>
+</body>
+</html>
