@@ -1,0 +1,26 @@
+{
+  "name": "food-delivery-app",
+  "version": "1.0.0",
+  "description": "we can deliver food by order",
+  "scripts": {
+    "start":"parcel index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mallikarjuna1273/React.git"
+  },
+  "author": "mallikharjuna",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mallikarjuna1273/React/issues"
+  },
+  "homepage": "https://github.com/mallikarjuna1273/React#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  }
+}

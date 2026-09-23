@@ -13,3 +13,26 @@
       ])
 
    # render method actually convert that object into html format and send it to the DOM 
+
+
+   # Folder Structure explanation
+
+   # node_modules => collection of libraries
+
+   # package.json => it's the npm configuration file & it will not show the exact version that is used by project
+
+   # package.lock.json  => it will track exact version that's downloaded in the application
+
+   # we have twi types of js versions one is "commonjs another one is "module" , by default type is "commonjs" only
+
+   # common.js => need to import like this ,  const React = require('react')
+
+   # module/ejs => need to import like this , import React from 'react'
+
+   # jsx won't execute javaScript code blindly , before execute it will sanitize the code and it will prevents XSS (cross site scripting) issue
+
+   # npx => is for executing
+
+   # npm for installing libraries , npm is a centralized library it has large amount of libraries
+
+   # 
