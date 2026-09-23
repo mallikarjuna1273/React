@@ -6,6 +6,9 @@ body{
 .header-container{
     display: flex;
     justify-content: space-between;
+    padding: 0px 5px;
+    margin: 2px 5px;
+    border: 1px solid black;
 }
 .logo-container{
     width: 75px;
@@ -49,4 +52,9 @@ body{
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
+}
+
+.section-logics{
+    display: flex;
+    padding: 0px 25px;
 }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "we can deliver food by order",
   "scripts": {
-    "start":"parcel index.html",
+    "start": "parcel index.html",
     "test": "jest"
   },
   "repository": {
@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "react-router": "^8.4.0",
+    "react-router-dom": "^6.30.6"
   }
 }
