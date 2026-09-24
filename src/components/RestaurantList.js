@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import RestaurantCard from "./RestaurantCard";
+import { Link } from "react-router-dom";
+import { BASE_URL } from "../utils/constants";
 
 const RestaurantList = () => {
   const [resList, setResList] = useState([]);
@@ -12,15 +14,17 @@ const RestaurantList = () => {
 
   const fetchData = async () => {
     const api = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.37082&lng=78.553042&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
+      `https://namastedev.com/api/v1/listRestaurants`
+,
     );
     const json = await api.json();
+    console.log(json)
     setResList(
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+      json?.data?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants,
     );
     setFilterResList(
-      json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle
+      json?.data?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants,
     );
   };
@@ -52,9 +56,9 @@ const RestaurantList = () => {
             <button onClick={handleTopRated}>Top Rated</button>
         </div>
       </div>
-      <div className="restaurant-list">
+      <div className="flex flex-wrap px-4 mx-2 ">
         {filterResList.map((res) => {
-          return <RestaurantCard key={res.info.id} resData={res} />;
+          return <Link key={res.info.id} to={"/res-menu/" + res.info.id}> <RestaurantCard  resData={res} /> </Link>;
         })}
       </div>
     </>

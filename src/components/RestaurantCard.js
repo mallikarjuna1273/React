@@ -5,9 +5,9 @@ const RestaurantCard = ({ resData }) => {
   const { name, id, cuisines, avgRating, cloudinaryImageId, costForTwo } =
     resData.info;
   return (
-    <div className="res-card">
+    <div className="w-[208px] px-4 m-2 border border-black bg-grey-100 hover:bg-amber-200">
       <img
-        className="res-img"
+        className="w-auto"
         src={
           "https://media-assets.swiggy.com/swiggy/image/upload/" +
           cloudinaryImageId

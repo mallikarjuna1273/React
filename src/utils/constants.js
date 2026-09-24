@@ -5,3 +5,6 @@ export const NAV_ITEMS = [
   { name: "about", label: "ABOUT", link: "/about" },
   { name: "contact", label: "Contact", link: "/contact" },
 ];
+
+
+export const BASE_URL="https://namastedev.com/api/v1"
