@@ -2,8 +2,11 @@
   "name": "food-delivery-app",
   "version": "1.0.0",
   "description": "we can deliver food by order",
+  "source":"index.html",
+  
   "scripts": {
     "start": "parcel index.html",
+    "build":"parcel build",
     "test": "jest"
   },
   "repository": {
